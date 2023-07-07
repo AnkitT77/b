@@ -1,0 +1,19 @@
+// SPDX-License-Identifier: GPL-3.0
+
+pragma solidity ^0.5.0;
+
+contract Function {
+
+
+   function getResult(
+
+   ) public pure returns(
+       unit product,unit sum){
+       unit a=11;
+       unit b=20;
+       product = a*b;
+       sum=a+b;
+    
+   }
+
+}
