@@ -1,0 +1,25 @@
+// SPDX-License-Identifier: GPL-3.0
+
+pragma solidity >=0.8.2 <0.9.0;
+
+contract OperatorExample {
+    uint256 public ternaryOperator;
+    bool public logicalAnd;
+    bool public logicalOr;
+    bool public logicalNot;
+    uint256 public bitwiseAnd;
+    uint256 public bitwiseOr;
+    uint256 public bitwiseXor;
+    uint256 public bitwiseNot;
+
+    function performOperations(uint256 a, uint256 b, bool c) public {
+        ternaryOperator = c ? a : b;
+        logicalAnd = a > 0 && b > 0;
+        logicalOr = a > 0 || b > 0;
+        logicalNot = !c;
+        bitwiseAnd = a & b;
+        bitwiseOr = a | b;
+        bitwiseXor = a ^ b;
+        bitwiseNot = ~a;
+    }
+}
