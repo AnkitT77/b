@@ -1,0 +1,15 @@
+// SPDX-License-Identifier: GPL-3.0
+
+pragma solidity >=0.8.2 <0.9.0;
+
+contract TernaryOperators {
+    bool public loggedIn;
+
+    function setLoggedIn(bool value) public {
+        loggedIn = value;
+    }
+
+    function ternaryOperator() public view returns (string memory) {
+        return loggedIn ? "user is loggedIn" : "user is not loggedIn";
+    }
+}
